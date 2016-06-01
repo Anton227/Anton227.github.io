@@ -1,0 +1,11 @@
+.article{
+	width: 500px;
+	margin: 0 auto;
+}
+h1 , .image{
+	text-align: center;
+}
+ul{
+	text-align: left;
+	list-style: none;
+}

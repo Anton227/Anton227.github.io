@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>12</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- 	<link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script   src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/tmpl.js"></script>
+</head>
+<body>
+	<script type="text/template" id="test">
+		<% for (var i = 0; i < data.length; i++  ) { %>
+		<div class="article">
+			<h1><%= data[i].title %></h1>
+			<p class="image"><%= data[i].image %></p>
+			<h2><%= data[i].subtitle1 %></h2>
+			<h2><%= data[i].subtitle2 %></h2>
+			<ul>
+				<li><h3><%= data[i].list1 %></h3></li>
+				<li><h3><%= data[i].list2 %></h3></li>
+				<li><h3><%= data[i].list3 %></h3></li>
+			</ul>
+			<p><%= data[i].line %></p>
+			<h2><%= data[i].subtitle3 %></h2>
+			<h3><%= data[i].content %></h3>
+		</div>
+		<% }; %>
+	</script>
+</body>
+</html>
+

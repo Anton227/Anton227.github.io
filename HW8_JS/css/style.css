@@ -1,0 +1,45 @@
+section {
+    width: 600px;
+    height: 250px;
+    margin: 30px auto;
+
+}
+
+.fields {
+    height: 200px;
+    border: 2px solid grey;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    padding: 25px 0 0 25px;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-top: 3px;
+}
+
+.prompt {
+    display: inline-block;
+    width: 200px;
+    height: 15px;
+    padding: 7px 0 2px 10px;
+    border-radius: 3px;
+    border:2px solid lightgrey;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.help {
+    margin-top: 2px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    color: grey;
+    cursor: pointer;
+}
+
+.help:hover {
+    border: 1px solid grey;
+    color: black;
+}
