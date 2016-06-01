@@ -3,34 +3,19 @@
 // });
 
 $(function(){
+	var articles = $('.articles');
 	var text = $('.text');
-	var text1 = $('.text1');
-	var text2 = $('.text2');
-	var text3 = $('.text3');
 
 	$('.btn1').click(function(){
-		text.show(),
-		text2.hide(),
-		// text2.css({"display": "none"}); також працює некоректно !!!
-		// text2.animate({
-		// 	color:'#FF0000',
-		// });
-		// animate - взагалі не працює !!!
-		text.show();
+		text.hide().filter(':eq(0)').show();
 	});
 
 	$('.btn2').click(function(){
-		text.show(),
-		text1.hide(),
-		text3.hide(),
-		text.show();
+		text.hide().filter(':eq(1)').show();
 	});
 
 	$('.btn3').click(function(){
-		text.show(),
-		text1.hide(),
-		text2.hide(),
-		text.show();
+		text.hide().filter(':eq(2)').show();
 	});
 
 })
