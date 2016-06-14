@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HW13-14_JS</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<script   src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="js/template.js"></script>	
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+
+		<script type="text/template" id="test">
+			<h3 class="text-center"><%= header %></h3>
+			<ul class="questions">
+				<% for (var i = 0; i < questions.length; i ++) { %>
+				<h4><%= questions[i].question %></h4>
+				<% for (var k = 0; k < questions[i].answers.length; k++)  { %>
+				<li class="radio"><label for="<%= questions[i].id[k]  %>"><input type="radio" name="<%= questions[i].name %>" id="<%= questions[i].id[k] %>"><%= questions[i].answers[k] %></label>
+					<% }; %>
+				</li>
+				<% }; %>
+			</ul>
+			<button class="btn btn-primary btn-lg" id="modal-launcher"><%= button %></button>
+		</script>
+
+		<div id="modal-background"></div>
+
+		<div id="modal-content">
+			<div id="modal-text"></div>
+			<button class="btn btn-default" id="modal-close">Закрити</button>
+			<button class="btn btn-info" id="modal-try_again">Спробувати ще</button>
+		</div>
+
+		<div class="hint">Для перевірки</br> 1.1&nbsp;&nbsp;&nbsp;2.2&nbsp;&nbsp;&nbsp;3.3</div>
+
+	</div>
+</body>
+</html>
