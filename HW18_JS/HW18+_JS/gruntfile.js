@@ -2,19 +2,19 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
    concat: {
-  //   // options: {
-  //   // // define a string to put between each file in the concatenated output
-  //   // separator: ';'
-  // },
-  distJS: {
+    options: {
+    // define a string to put between each file in the concatenated output
+    separator: ';'
+  },
+  dist: {
     // the files to concatenate
     src: ['js/src/*.js'],
     // the location of the resulting JS file
     dest: 'js/dist/script.min.js'
   },
-  distCss: {
+  dist: {
     src: ['css/src/*.css'],
-    dest: 'css/dist/main.css'
+    dest: 'css/dist/style.css'
   }
 },
 
