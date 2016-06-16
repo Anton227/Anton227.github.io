@@ -7,6 +7,9 @@ module.exports = function(grunt) {
   //   // separator: ';'
   // },
   distJS: {
+    options:{
+      separator:';'
+    },
     // the files to concatenate
     src: ['js/src/*.js'],
     // the location of the resulting JS file
