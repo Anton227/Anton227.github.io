@@ -1,0 +1,26 @@
+.form-horizontal {
+	margin-top: 150px;	
+}
+.text-center {
+	margin-bottom: 50px;
+}
+.results { 
+	overflow: hidden; 
+}
+.results .item { 
+	float: left; 
+	margin: 9px; 
+	border: 1px solid #eee; 
+	box-sizing: content-box; 
+	overflow: hidden; 
+	position: relative;  
+}
+.results .item img {
+	display: block; 
+	width: auto; 
+	height: 100%; 
+}
+img {
+	width: 140px;
+	height: 140px;
+}
