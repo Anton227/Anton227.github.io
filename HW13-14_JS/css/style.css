@@ -47,13 +47,12 @@ body {
   background: white;
   border-radius: 10px;
   display: none;
-  height: 40vw;
-  left: 25%;
-  /*  margin: -320px 0 0 -160px;*/
+  height: 35%;
+  left: 35%;
   padding: 10px;
   position: absolute;
-  top: 10%;
-  width: 50vw;
+  top: 25%;
+  width: 30%;
   z-index: 1;
 }
 #modal-text {
