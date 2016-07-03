@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ClassWork_JS23</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="js/tmpl.js" ></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/script_model.js"></script>
+	<script type="text/javascript" src="js/script_view.js"></script>
+	<script type="text/javascript" src="js/script_controller.js"></script> -->
+	<script data-main="js/app" src="js/require.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<script type="text/template" id="wrapper-template">
+		<div class="wrapper">
+			<ul class="item-list"></ul>
+			<div class="controlls">
+				<input type="text" class="item-value">
+				<button class="item-add">Add some run</button>
+			</div>
+		</div>
+	</script>
+
+	<script type="text/template" id="list-template">
+		<% for (var i = 0; i < data.length; i++ ) { %>
+		<li><%= data[i] %> <span data-value="<%= data[i] %>" class="item-delete">x</span></li>
+		<% };  %>
+	</script>
+
+</body>
+</html>
