@@ -3,7 +3,7 @@ function View(model){
 
 	function init(){
 		var wrapper = tmpl($('#wrapper-template').html());
-		
+
 		$('body').append(wrapper);
 		self.elements = {
 			input: $('.item-value'),
@@ -19,4 +19,4 @@ function View(model){
 
 	};
 	init();
-}
+};
